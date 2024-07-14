@@ -4,6 +4,6 @@
 
 # 地址
 
-文档：https://uni.cool-admin.com
+文档：https://uni-docs.cool-js.com
 
 官网：https://cool-js.com
