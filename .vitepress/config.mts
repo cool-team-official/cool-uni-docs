@@ -2,8 +2,8 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Cool Admin",
-  description: "一个很酷的后台管理系统开发框架",
+  title: "Cool Uni",
+  description: "基于 uniapp 的项目脚手架",
   lastUpdated: true,
 
   themeConfig: {
@@ -40,7 +40,7 @@ export default defineConfig({
     editLink: {
       text: "在GitHub上编辑",
       pattern:
-        "https://github.com/cool-team-official/cool-admin-go-next-docs/blob/main/:path",
+        "https://github.com/cool-team-official/cool-uni-docs/blob/main/:path",
     },
     // https://vitepress.dev/reference/default-theme-config
     nav: [
@@ -49,7 +49,7 @@ export default defineConfig({
       { text: "🔥插件市场", link: "https://cool-js.com/plugin/list.html" },
       { text: "交流合作", link: "/src/about/index.md" },
       {
-        text: "v7.1.0",
+        text: "v7.3.0",
         items: [
           {
             text: "更新日志",
@@ -65,16 +65,16 @@ export default defineConfig({
         text: "更多",
         items: [
           {
+            text: "Cool Admin(Vue版)",
+            link: "https://vue.cool-admin.com",
+          },
+          {
             text: "Cool Admin(Nodejs版)",
             link: "https://cool-js.com",
           },
           {
             text: "Cool Admin(Java版)",
             link: "https://java.cool-admin.com",
-          },
-          {
-            text: "Uni（基于uni-app跨端移动端开发）",
-            link: "https://cool-js.com/uni/introduce.html",
           },
         ],
       },
@@ -101,20 +101,9 @@ export default defineConfig({
         text: "教程",
         items: [
           { text: "快速开始", link: "/src/guide/quick.md" },
-          { text: "Ai编码", link: "/src/guide/ai.md" },
-          { text: "Ai流程编排", link: "/src/guide/flow.md" },
-          { text: "扩展插件", link: "/src/guide/plugin.md" },
           {
             text: "核心",
-            items: [
-              { text: "控制器(controller)", link: "/src/guide/controller.md" },
-              { text: "缓存", link: "/src/guide/cache.md" },
-              { text: "文件上传", link: "/src/guide/upload.md" },
-              { text: "统一异常", link: "/src/guide/exception.md" },
-              { text: "权限", link: "/src/guide/auth.md" },
-              { text: "数据库", link: "/src/guide/db.md" },
-              { text: "swagger 文档", link: "/src/guide/swagger.md" },
-            ],
+            items: [],
           },
         ],
       },
@@ -139,7 +128,7 @@ export default defineConfig({
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/cool-team-official/cool-admin-go-next",
+        link: "https://github.com/cool-team-official/cool-uni",
       },
     ],
   },

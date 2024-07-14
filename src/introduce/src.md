@@ -5,35 +5,25 @@
 为了使项目能够持续，不要吝啬你们免费的`Start`哦，如果你们发现问题或者想要贡献代码，欢迎`pr`、`issue`
 
 ::: warning 注意！！！
-这并不意味着您可以将 cool-admin 应用到非法的领域，比如涉及赌博，暴力等方面。如因此产生纠纷等法律问题，cool-admin 不承担任何责任。
+这并不意味着您可以将 cool-uni 应用到非法的领域，比如涉及赌博，暴力等方面。如因此产生纠纷等法律问题，cool-uni 不承担任何责任。
 :::
 
-## 后端
+## 仓库
 
-Cool-Admin 的后端源码，欢迎大家一起共建维护，积极贡献代码。
+Cool-Uni 的源码，欢迎大家一起共建维护，积极贡献代码。
 
-[https://github.com/cool-team-official/cool-admin-go-next](https://github.com/cool-team-official/cool-admin-go-next)
-
-或
-
-[https://gitee.com/cool-team-official/cool-admin-go-next](https://gitee.com/cool-team-official/cool-admin-go-next)
-
-## 前端
-
-Cool-Admin 的前端源码，欢迎大家一起共建维护，积极贡献代码。
-
-[https://github.com/cool-team-official/cool-admin-vue](https://github.com/cool-team-official/cool-admin-vue)
+[https://github.com/cool-team-official/cool-uni](https://github.com/cool-team-official/cool-uni)
 
 或
 
-[https://gitee.com/cool-team-official/cool-admin-vue](https://gitee.com/cool-team-official/cool-admin-vue)
+[https://gitee.com/cool-team-official/cool-uni](https://gitee.com/cool-team-official/cool-uni)
 
 ## 文档
 
 如果文档有缺失，欢迎提交`pr`，您的贡献可能会给其他人来带巨大的帮助。
 
-[https://github.com/cool-team-official/cool-admin-go-next-docs](https://github.com/cool-team-official/cool-admin-go-next-docs)
+[https://github.com/cool-team-official/cool-uni-docs](https://github.com/cool-team-official/cool-uni-docs)
 
 或
 
-[https://gitee.com/cool-team-official/cool-admin-go-next-docs](https://gitee.com/cool-team-official/cool-admin-go-next-docs)
+[https://gitee.com/cool-team-official/cool-uni-docs](https://gitee.com/cool-team-official/cool-uni-docs)

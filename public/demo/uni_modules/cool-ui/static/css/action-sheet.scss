@@ -1,0 +1,50 @@
+.cl-action-sheet {
+	position: relative;
+
+	.cl-popup__container {
+		background-color: #fff;
+		border-radius: 32rpx 32rpx 0 0;
+		overflow: hidden;
+	}
+
+	&__title {
+		display: flex;
+		align-items: center;
+		font-size: 24rpx;
+		padding: 0 46rpx;
+		height: 90rpx;
+		background-color: $cl-color-bg;
+	}
+
+	&__item {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		padding: 30rpx;
+		line-height: 1.4;
+		font-size: 28rpx;
+		border-bottom: $cl-border-width solid $cl-color-bg;
+		background-color: #fff;
+		border-radius: 0;
+
+		&:last-child {
+			border-bottom: 0;
+		}
+
+		&.is-disabled {
+			color: $cl-color-disabled;
+		}
+
+		&:not(.is-disabled):active {
+			background-color: $cl-color-active;
+		}
+
+		&--cancel {
+			border-top: 10rpx solid $cl-color-bg;
+		}
+
+		&:after {
+			border: 0;
+		}
+	}
+}
