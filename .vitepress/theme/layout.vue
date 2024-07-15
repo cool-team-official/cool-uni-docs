@@ -28,6 +28,8 @@ watch(
         .replace(".html", "");
 
       path.value = `pages/demo${str}`;
+    } else {
+      path.value = "";
     }
   },
   {
