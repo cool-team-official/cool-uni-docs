@@ -41,9 +41,9 @@ const ad = reactive({
   get() {
     fetch("http://192.168.0.119:9009/app/info/ad/list", {
       method: "POST",
-      body: {
+      body: JSON.stringify({
         channel: 1,
-      },
+      }),
     })
       .then((res) => res.json())
       .then((res) => {
