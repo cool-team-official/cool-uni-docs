@@ -39,8 +39,11 @@ const ad = reactive({
   },
 
   get() {
-    fetch("http://192.168.0.119:9009/app/info/ad/list", {
+    fetch("https://service.cool-js.com/api/app/info/ad/list", {
       method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
       body: JSON.stringify({
         channel: 1,
       }),
