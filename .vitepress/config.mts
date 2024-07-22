@@ -146,6 +146,10 @@ export default defineConfig({
                 link: "/src/guide/components/basic/button.md",
               },
               {
+                text: "Text",
+                link: "/src/guide/components/basic/text.md",
+              },
+              {
                 text: "Icon",
                 link: "/src/guide/components/basic/icon.md",
               },
