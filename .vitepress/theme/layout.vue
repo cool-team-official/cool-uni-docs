@@ -10,11 +10,9 @@
         />
       </div>
     </template>
-
-    <template #aside-outline-before>
-      <demo is-fr :path="path" :key="path" />
-    </template>
   </Layout>
+
+  <demo is-fr :path="path" :key="path" />
 </template>
 
 <script setup>
@@ -70,9 +68,12 @@ watch(
     } else {
       path.value = "";
     }
+
+    console.log(val);
   },
   {
     deep: true,
+    immediate: true,
   }
 );
 

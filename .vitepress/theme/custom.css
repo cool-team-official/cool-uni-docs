@@ -37,10 +37,10 @@
 
 @media (min-width: 960px) {
   .VPHero.has-image {
-    .name{
+    .name {
       padding-bottom: 20px;
     }
-    .text{
+    .text {
       padding-bottom: 2px;
     }
   }
@@ -52,4 +52,18 @@
 
 .medium-zoom-image {
   z-index: 1000;
+}
+
+.VPContent .container > .content {
+  padding: 0;
+}
+
+.VPContent .container > .content .content-container {
+  max-width: 100% !important;
+}
+
+@media (max-width: 768px) {
+  table {
+    white-space: nowrap;
+  }
 }

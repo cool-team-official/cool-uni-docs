@@ -93,12 +93,26 @@ const isShow = computed(() => {
   &.is-fr {
     position: fixed;
     right: calc(50% - 950px);
-    top: 60px;
+    top: 70px;
     z-index: 999;
   }
 }
 
 .home-space {
   height: 100px;
+}
+
+@media (max-width: 1920px) {
+  .demo {
+    &.is-fr {
+      right: 5px;
+    }
+  }
+}
+
+@media (max-width: 768px) {
+  .demo {
+    display: none;
+  }
 }
 </style>
