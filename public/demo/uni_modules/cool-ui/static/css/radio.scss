@@ -99,6 +99,16 @@
 		}
 	}
 
+	&.is-bg {
+		&.is-checked {
+			background-color: $cl-color-primary;
+
+			.cl-radio__label {
+				color: #fff;
+			}
+		}
+	}
+
 	&.is-round {
 		border-radius: $cl-radio-size;
 	}

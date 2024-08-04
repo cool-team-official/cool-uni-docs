@@ -1,7 +1,7 @@
 .cl-tabs {
 	width: 100%;
 
-	&__header {
+	&__inner {
 		display: flex;
 		position: relative;
 	}
@@ -29,6 +29,9 @@
 			height: 100%;
 			font-size: 28rpx;
 			box-sizing: border-box;
+			position: relative;
+			z-index: 1;
+			transition: color 0.3s;
 
 			.cl-tabs__icon {
 				font-size: 30rpx;
@@ -66,7 +69,6 @@
 			width: 100%;
 			box-sizing: border-box;
 			background-color: #fff;
-			overflow: hidden;
 			transition: all 0.3s;
 			z-index: 99;
 		}
@@ -80,6 +82,16 @@
 		border-radius: 20rpx;
 		transition: all 0.5s;
 		background-color: $cl-color-primary;
+	}
+
+	&__slider {
+		height: 100%;
+		width: 100%;
+		position: absolute;
+		top: 0;
+		transition: all 0.3s;
+		background-color: $cl-color-primary;
+		border-radius: $cl-tabs-slider-radius;
 	}
 
 	&.is-content {

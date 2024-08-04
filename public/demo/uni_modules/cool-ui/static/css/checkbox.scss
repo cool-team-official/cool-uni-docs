@@ -13,12 +13,12 @@
 		position: relative;
 		box-sizing: border-box;
 		border: $cl-border-width solid $cl-border-color;
-		border-radius: $cl-border-radius;
+		border-radius: $cl-checkbox-radius;
 		height: $cl-checkbox-size;
 		width: $cl-checkbox-size;
 
 		text {
-			font-size: 24rpx;
+			font-size: 22rpx;
 			position: absolute;
 		}
 	}
@@ -85,6 +85,16 @@
 
 			.cl-checkbox__label {
 				color: $cl-color-primary;
+			}
+		}
+	}
+
+	&.is-bg {
+		&.is-checked {
+			background-color: $cl-color-primary;
+
+			.cl-checkbox__label {
+				color: #fff;
 			}
 		}
 	}

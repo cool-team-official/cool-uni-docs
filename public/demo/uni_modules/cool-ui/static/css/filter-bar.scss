@@ -27,6 +27,7 @@
 	background-color: #fff;
 	box-sizing: border-box;
 	position: relative;
+	border-radius: 24rpx 24rpx 0 0;
 }
 
 cl-filter-item {
@@ -40,7 +41,6 @@ cl-filter-item {
 	flex: 1;
 	height: 80rpx;
 	width: 100%;
-	background-color: #fff;
 	color: #727272;
 	padding: 0 20rpx;
 	box-sizing: border-box;
@@ -104,6 +104,7 @@ cl-filter-item {
 			background-color: #fff;
 			transition: max-height 0.3s;
 			overflow: hidden;
+			border-radius: 0 0 24rpx 24rpx;
 
 			&__label {
 				flex: 1;
@@ -119,7 +120,8 @@ cl-filter-item {
 			}
 
 			&__btn {
-				padding: 20rpx 30rpx;
+				padding: 0 30rpx;
+				margin: 30rpx 0;
 			}
 
 			&__list {
@@ -160,6 +162,7 @@ cl-filter-item {
 						flex-wrap: wrap;
 						box-sizing: border-box;
 						padding: 0 20rpx;
+						margin-bottom: 20rpx;
 					}
 
 					&__item {
@@ -221,5 +224,13 @@ cl-filter-item {
 
 	&.is-disabled {
 		color: $cl-color-disabled;
+	}
+}
+
+.cl-filter-bar__wrap {
+	&.is-expand {
+		.cl-filter-bar {
+			border-radius: 24rpx 24rpx 0 0;
+		}
 	}
 }

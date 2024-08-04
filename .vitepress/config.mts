@@ -328,6 +328,10 @@ export default defineConfig({
                 text: "Page",
                 link: "/src/guide/components/extend/page.md",
               },
+              {
+                text: "SliderVerify",
+                link: "/src/guide/components/extend/slider-verify.md",
+              },
             ],
           },
         ],

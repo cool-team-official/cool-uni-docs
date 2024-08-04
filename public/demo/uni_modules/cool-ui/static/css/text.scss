@@ -15,7 +15,7 @@ cl-text {
 	}
 
 	&.is-block {
-		display: block;
+		display: flex;
 	}
 
 	&.is-line-through {
@@ -84,6 +84,6 @@ cl-text {
 
 	&__prefix-icon,
 	&__suffix-icon {
-		font-size: 30rpx;
+		font-size: inherit;
 	}
 }
