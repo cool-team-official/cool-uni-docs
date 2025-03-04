@@ -1,0 +1,1 @@
+import{g as o,h as r,G as s}from"./index-Dlau7bkh.js";import{_ as t}from"./_plugin-vue_export-helper.BCo6x5W8.js";const e=t({},[["render",function(t,e){const n=s;return o(),r(n,{src:"https://show.cool-admin.com"})}]]);export{e as default};

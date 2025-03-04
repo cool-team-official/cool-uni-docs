@@ -54,15 +54,17 @@
 
 // 其他
 .mp-html {
+	// #ifndef MP
 	img,
+	// #endif
 	image {
 		display: block;
 		max-width: 100%;
 	}
 
-	/* #ifndef MP */
-	* {
-		margin: revert !important;
+	.hl-pre {
+		border-radius: 20rpx;
+		box-sizing: border-box;
+		// width 看页面情况设置，如：calc(100vw - 48rpx)
 	}
-	/* #endif */
 }
