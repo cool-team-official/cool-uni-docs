@@ -9,7 +9,7 @@
   >
     <img class="bg" src="/demo/bg.png" />
 
-    <iframe class="preview" :src="`/demo/index.html#/${path}`" />
+    <iframe class="preview" :src="`http://localhost:9900/#/${path}`" />
   </div>
 
   <div class="home-space" v-if="isHome"></div>
@@ -55,16 +55,6 @@ const isShow = computed(() => {
   border-radius: 50px;
   margin: 50px 0;
 
-  &::after {
-    content: "";
-    height: 25px;
-    width: calc(100% - 40px);
-    position: absolute;
-    left: 20px;
-    top: 23px;
-    background-color: #fff;
-  }
-
   .bg {
     position: relative;
     height: 727px;
@@ -84,10 +74,7 @@ const isShow = computed(() => {
   }
 
   &.is-home {
-    position: fixed;
-    right: calc(50% - 688px);
-    top: 50px;
-    z-index: 999;
+    margin: 0 auto;
   }
 
   &.is-fr {

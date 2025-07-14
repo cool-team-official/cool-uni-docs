@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Cool Uni",
+  title: "Cool Unix",
   description: "基于 uniapp 的项目脚手架",
   lastUpdated: true,
 
