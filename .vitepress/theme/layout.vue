@@ -69,7 +69,9 @@ watch(
       path.value = "";
     }
 
-    console.log(val);
+    if (val.includes("/introduce/icon")) {
+      path.value = "pages/demo/basic/icon";
+    }
   },
   {
     deep: true,

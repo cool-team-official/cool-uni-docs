@@ -1,28 +1,28 @@
 # main.ts
 
-uni-app 的入口文件。主要作用是初始化 vue 实例、定义全局组件、使用需要的插件
+main.ts 是 uni-app 应用的核心入口文件，主要用于初始化 Vue 应用实例并进行全局配置。在这里你可以:
+
+- 注册全局组件 (app.component)
+- 添加全局混入 (app.mixin)
+- 配置全局属性 (app.config.globalProperties)
+- 集成第三方插件
+- 其他全局配置...
+
+这些配置将贯穿整个应用的生命周期。
 
 ```ts
 import { createSSRApp } from "vue";
-import { bootstrap } from "/@/cool/bootstrap";
+import { bootstrap } from "./cool";
 import App from "./App.vue";
 import "./router";
 
 export function createApp() {
   const app = createSSRApp(App);
 
-  // 启动
   bootstrap(app);
-
-  // 隐藏底部导航栏
-  uni.hideTabBar();
 
   return {
     app,
   };
 }
 ```
-
-::: warning
-默认使用自定义底部导航栏，如需取消请注释第 18 行
-:::
