@@ -1,7 +1,7 @@
 {
   "devDependencies": {
-    "sass": "1.77.8",
-    "vitepress": "^1.6.3"
+    "sass": "^1.77.8",
+    "vitepress": "^1.2.3"
   },
   "scripts": {
     "dev": "vitepress dev",
