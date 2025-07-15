@@ -2,7 +2,7 @@ import { defineConfig } from "vitepress";
 
 // https://vitepress.dev/reference/site-config
 export default defineConfig({
-  title: "Cool Uni",
+  title: "Cool Unix",
   description: "基于 uniapp 的项目脚手架",
   lastUpdated: true,
 
@@ -46,26 +46,17 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "介绍", link: "/src/introduce/index.md", noIcon: false },
-      { text: "教程", link: "/src/guide/quick.md" },
-      { text: "组件", link: "/src/guide/components/basic/button.md" },
-      { text: "🔥插件市场", link: "https://cool-js.com/plugin" },
+      { text: "教程", link: "/src/introduce/quick.md" },
+      { text: "组件库", link: "/src/guide/components/basic/button.md" },
+      { text: "插件市场", link: "https://cool-js.com/plugin" },
       { text: "交流合作", link: "/src/about/index.md" },
-      {
-        text: "v8.0.0",
-        items: [
-          {
-            text: "更新日志",
-            link: "/src/todo/update.md",
-          },
-          {
-            text: "版本计划",
-            link: "/src/todo/plan.md",
-          },
-        ],
-      },
       {
         text: "更多",
         items: [
+          {
+            text: "Cool uni(uniapp版)",
+            link: "https://uni-docs.cool-js.com/",
+          },
           {
             text: "Cool Admin(Vue版)",
             link: "https://vue.cool-admin.com",
@@ -83,64 +74,116 @@ export default defineConfig({
     ],
     sidebar: [
       {
-        text: "介绍",
+        text: "简介",
+        link: "/src/introduce/index.md",
+      },
+      {
+        text: "源码",
+        link: "/src/introduce/src.md",
+      },
+      {
+        text: "更新日志",
+        link: "/src/todo/update.md",
+      },
+      {
+        text: "任务计划",
+        link: "/src/todo/plan.md",
+      },
+      {
         items: [
+          { text: "快速开始", link: "/src/introduce/quick.md" },
+          { text: "图标配置", link: "/src/introduce/icon.md" },
+          { text: "主题、样式库", link: "/src/introduce/theme.md" },
           {
-            text: "简介",
-            link: "/src/introduce/index.md",
-          },
-          {
-            text: "演示",
-            link: "/src/introduce/show.md",
-          },
-          {
-            text: "源码",
-            link: "/src/introduce/src.md",
-          },
-          {
-            text: "多语言",
+            text: "国际化",
             link: "/src/introduce/i18n.md",
+          },
+          {
+            text: "帮助文档",
+            link: "/src/introduce/help.md",
           },
         ],
       },
       {
-        text: "教程",
         items: [
-          { text: "快速开始", link: "/src/guide/quick.md" },
           {
             text: "目录结构",
             items: [
-              { text: "build", link: "/src/guide/build.md" },
-              { text: "components", link: "/src/guide/components.md" },
-              { text: "config", link: "/src/guide/config.md" },
+              {
+                text: ".cool",
+                link: "/src/guide/build.md",
+              },
+              {
+                text: ".cursor",
+                link: "/src/guide/components.md",
+              },
+              {
+                text: "components",
+                link: "/src/guide/config.md",
+                items: [
+                  { text: "local-set.uvue", link: "/src/guide/cool/hooks.md" },
+                  { text: "sms-btn.uvue", link: "/src/guide/cool/router.md" },
+                  { text: "tabbar.uvue", link: "/src/guide/cool/service.md" },
+                ],
+              },
+              { text: "config", link: "/src/guide/pages.md" },
               {
                 text: "cool",
                 items: [
+                  { text: "ctx", link: "/src/guide/cool/hooks.md" },
                   { text: "hooks", link: "/src/guide/cool/hooks.md" },
                   { text: "router", link: "/src/guide/cool/router.md" },
                   { text: "service", link: "/src/guide/cool/service.md" },
                   { text: "store", link: "/src/guide/cool/store.md" },
+                  { text: "theme", link: "/src/guide/cool/store.md" },
+                  { text: "types", link: "/src/guide/cool/store.md" },
+                  { text: "utils", link: "/src/guide/cool/store.md" },
                 ],
               },
-              { text: "pages", link: "/src/guide/pages.md" },
+              { text: "icons", link: "/src/guide/pages.md" },
+              { text: "locale", link: "/src/guide/pages.md" },
+              {
+                text: "pages",
+                link: "/src/guide/pages.md",
+                items: [
+                  { text: "demo", link: "/src/guide/cool/hooks.md" },
+                  { text: "index", link: "/src/guide/cool/hooks.md" },
+                  { text: "set", link: "/src/guide/cool/hooks.md" },
+                  { text: "user", link: "/src/guide/cool/hooks.md" },
+                ],
+              },
               { text: "router", link: "/src/guide/router.md" },
-              { text: "service", link: "/src/guide/service.md" },
               { text: "static", link: "/src/guide/static.md" },
               { text: "types", link: "/src/guide/types.md" },
               {
                 text: "uni_modules",
                 link: "/src/guide/uni_modules.md",
+                items: [
+                  {
+                    text: "cool-open-web",
+                    link: "/src/guide/uni-modules/cool-open-web.md",
+                  },
+                  {
+                    text: "cool-ui",
+                    link: "/src/guide/uni-modules/cool-ui.md",
+                  },
+                  {
+                    text: "cool-vibrate",
+                    link: "/src/guide/uni-modules/cool-vibrate.md",
+                  },
+                ],
               },
               { text: "App.vue", link: "/src/guide/App.vue.md" },
               { text: "main.ts", link: "/src/guide/main.ts.md" },
+              { text: "tailwind.config.ts", link: "/src/introduce/theme.md" },
               { text: "pages.json", link: "/src/guide/pages.json.md" },
+              { text: "theme.json", link: "/src/guide/theme.json.md" },
               { text: "vite.config.ts", link: "/src/guide/vite.config.ts.md" },
             ],
           },
         ],
       },
       {
-        text: "组件",
         items: [
           {
             text: "基础组件",
@@ -340,28 +383,11 @@ export default defineConfig({
           },
         ],
       },
-      {
-        text: "计划&更新",
-        items: [
-          {
-            text: "更新",
-            link: "/src/todo/update.md",
-          },
-          {
-            text: "计划",
-            link: "/src/todo/plan.md",
-          },
-        ],
-      },
-      {
-        text: "交流合作",
-        link: "/src/about/index.md",
-      },
     ],
     socialLinks: [
       {
         icon: "github",
-        link: "https://github.com/cool-team-official/cool-uni",
+        link: "https://github.com/cool-team-official/cool-unix",
       },
     ],
   },
